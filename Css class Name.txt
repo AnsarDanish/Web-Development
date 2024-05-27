@@ -1,0 +1,7 @@
+window+v    history of clipboard
+ctrl+c      poori line ko copy karne k liye
+alt+Mouse-right-click       multiple select k liye
+shift+alt+right arrow (2times)            tag k darmiyaan ka content select karne k liye
+
+
+<body style="font-family: sans-serif;">

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why React ?</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body >
+  <section>
+    <div >
+        <h1 ><span class="bsk1" ></span> apples</h1>
+        <p>Basket 1</p>
+    </div>
+    <button class="left" title="left arrow">
+        <img src="./left-arrow.png" alt="">
+    </button>
+    <button class="right" title="right arrow">
+        <img src="./right-arrow.png" alt="">
+    </button>
+    <div >
+        <h1><span class="bsk2"></span> apples</h1>
+        <p> Basket 2</p>
+    </div>
+  </section>
+    
+</body>
+<script >
+
+    let totalApp=10;
+    let basket1=document.querySelector(".bsk1");
+    let basket2=document.querySelector(".bsk2");
+    let left=document.querySelector(".left")
+    let right=document.querySelector(".right");
+    let secondBasket=0;
+    let firstBasket=totalApp-secondBasket;
+  
+
+    console.log(firstBasket);
+    console.log(secondBasket);
+    basket1.innerText=firstBasket;
+    basket2.innerText=secondBasket;
+    left.addEventListener('click' ,()=>{
+        if(secondBasket >0 && secondBasket <11){
+         firstBasket++;
+        secondBasket--;
+        basket1.innerText=firstBasket;
+        basket2.innerText=secondBasket;
+        }
+       
+
+    })
+
+    right.addEventListener('click',()=>{
+        if(firstBasket >0){
+         firstBasket--;
+        secondBasket++;
+        basket1.innerText=firstBasket;
+        basket2.innerText=secondBasket;
+        }
+
+
+    })
+</script>
+</html>
